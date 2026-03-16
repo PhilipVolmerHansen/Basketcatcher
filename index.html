@@ -3,41 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catch the Falling Objects</title>
+    <title>Queue-it Catcher</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="game-background"></div>
     <div id="scoreboard">
         <h2>High Scores</h2>
-        <div id="scores-list">
-            <!-- Scores will be added here dynamically -->
-        </div>
+        <div id="scores-list"></div>
     </div>
-    
+
     <div id="game-container">
         <div id="name-popup" class="popup hidden">
             <div class="popup-content">
-                <h2>This page says</h2>
-                <p>Please enter your name!</p>
+                <h2>Hold on!</h2>
+                <p>Please enter your name to join the queue!</p>
                 <button id="popup-ok" class="popup-button">OK</button>
             </div>
         </div>
-        
+
         <div id="start-screen" class="screen">
-            <h1>Catch the Objects!</h1>
-            <p>Use arrow keys to move and catch the good objects</p>
+            <h1>Queue-it Catcher</h1>
+            <p>Catch the right visitors and protect your virtual queue!<br>
+            <strong>Level 1:</strong> Catch devices to fill your queue<br>
+            <strong>Level 2:</strong> Catch real users, avoid bots &amp; thieves!</p>
             <div style="margin-bottom: 20px;">
                 <input type="text" id="player-name" placeholder="Enter your name" required>
             </div>
             <button id="start-button">Start Game</button>
         </div>
-        
+
         <div id="game-screen" class="screen hidden">
             <canvas id="gameCanvas"></canvas>
             <button id="pause-button">Pause</button>
         </div>
-        
+
         <div id="game-over-screen" class="screen hidden">
             <h1>Game Over!</h1>
             <p id="game-over-message">Game Over!</p>
